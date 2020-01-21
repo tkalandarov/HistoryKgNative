@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">История Кыргызстана</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">История Кыргызстана</string>
+    <string name="nav_header_subtitle">УВК ШГ №67</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_search">Поиск</string>
+
+    <string name="menu_home">Даты</string>
+    <string name="menu_gallery">Личности</string>
+    <string name="menu_slideshow">Тестирование</string>
+    <string name="menu_tools">Настройки</string>
+    <string name="menu_share">О проекте</string>
+    <string name="menu_send">Поделиться</string>
+
+    <string name="toolbar_search_placeholder">Введите запрос</string>
+</resources>
