@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.jelly.historykgnative.ui.gallery.GalleryFragment"
+        android:name="com.jelly.historykgnative.ui.people.PeopleFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_people" />
 
     <fragment
         android:id="@+id/nav_slideshow"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/nav_tools"
         android:name="com.jelly.historykgnative.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
+        android:label="@string/menu_bookmarks"
         tools:layout="@layout/fragment_tools" />
 
     <fragment

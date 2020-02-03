@@ -7,8 +7,4 @@
             android:icon="@drawable/ic_search"
             app:showAsAction="ifRoom"
             app:actionViewClass="android.widget.SearchView" />
-        <item
-            android:id="@+id/action_settings"
-            android:title="@string/action_settings"
-            app:showAsAction="never"/>
 </menu>

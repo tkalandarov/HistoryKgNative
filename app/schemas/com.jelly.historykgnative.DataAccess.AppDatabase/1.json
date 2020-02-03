@@ -1,0 +1,163 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "c3a0c2e1166306f23baf98bacc66a595",
+    "entities": [
+      {
+        "tableName": "Dates",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `DatePos` INTEGER NOT NULL, `DateText` TEXT, `EventName` TEXT, `EventText` TEXT, `Picture` BLOB)",
+        "fields": [
+          {
+            "fieldPath": "Id",
+            "columnName": "Id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "DatePos",
+            "columnName": "DatePos",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "DateText",
+            "columnName": "DateText",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "EventName",
+            "columnName": "EventName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "EventText",
+            "columnName": "EventText",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Picture",
+            "columnName": "Picture",
+            "affinity": "BLOB",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "People",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `Name` TEXT, `YearsOfLife` TEXT, `Text` TEXT, `Picture` BLOB)",
+        "fields": [
+          {
+            "fieldPath": "Id",
+            "columnName": "Id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "Name",
+            "columnName": "Name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "YearsOfLife",
+            "columnName": "YearsOfLife",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Text",
+            "columnName": "Text",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Picture",
+            "columnName": "Picture",
+            "affinity": "BLOB",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Questions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `QuestionText` TEXT, `WrongAnswer1` TEXT, `WrongAnswer2` TEXT, `WrongAnswer3` TEXT, `WrongAnswer4` TEXT, `RightAnswer` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "Id",
+            "columnName": "Id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "QuestionText",
+            "columnName": "QuestionText",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "WrongAnswer1",
+            "columnName": "WrongAnswer1",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "WrongAnswer2",
+            "columnName": "WrongAnswer2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "WrongAnswer3",
+            "columnName": "WrongAnswer3",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "WrongAnswer4",
+            "columnName": "WrongAnswer4",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "RightAnswer",
+            "columnName": "RightAnswer",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"c3a0c2e1166306f23baf98bacc66a595\")"
+    ]
+  }
+}
