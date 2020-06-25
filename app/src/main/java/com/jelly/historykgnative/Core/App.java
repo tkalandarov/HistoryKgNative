@@ -8,7 +8,6 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.jelly.historykgnative.DataAccess.AppDatabase;
-import com.jelly.historykgnative.Models.DateModel;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -51,7 +50,6 @@ public class App extends Application
 
             String currentDBPath =
                     getDatabasePath(AppDatabase.DBNAME).getAbsolutePath();
-            Log.d("HELLO!", currentDBPath);
             String backupDBPath = AppDatabase.DBNAME;
 
             File currentDB = new File(currentDBPath);

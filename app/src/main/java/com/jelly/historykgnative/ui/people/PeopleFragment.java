@@ -9,18 +9,18 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.jelly.historykgnative.Activities.MainActivity;
 import com.jelly.historykgnative.Core.PeopleListAdapter;
-import com.jelly.historykgnative.DateDetailActivity;
 import com.jelly.historykgnative.Models.PersonModel;
-import com.jelly.historykgnative.PersonDetailActivity;
+import com.jelly.historykgnative.Activities.PersonDetailActivity;
 import com.jelly.historykgnative.R;
 
 public class PeopleFragment extends Fragment
 {
-
     private PeopleViewModel peopleViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)

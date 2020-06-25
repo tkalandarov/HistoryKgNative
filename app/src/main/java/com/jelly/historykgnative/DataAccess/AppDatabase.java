@@ -1,7 +1,6 @@
 package com.jelly.historykgnative.DataAccess;
 
 import android.content.Context;
-import android.provider.BaseColumns;
 import android.util.Log;
 
 import androidx.annotation.NonNull;

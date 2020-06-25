@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".PersonDetailActivity">
+    tools:context=".Activities.PersonDetailActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar_layout"
@@ -44,13 +44,13 @@
 
     <include layout="@layout/person_detail_content" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
         app:layout_anchor="@id/appbar_layout"
         app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@drawable/ic_bookmark"/>
+        app:srcCompat="@drawable/ic_bookmark"/>-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

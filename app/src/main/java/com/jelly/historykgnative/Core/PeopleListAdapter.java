@@ -72,7 +72,7 @@ public class PeopleListAdapter extends ArrayAdapter<PersonModel> implements Filt
         if (person != null)
         {
             TextView lifespanColumn = convertView.findViewById(R.id.leftColumnText);
-            TextView nameColumn = (TextView) convertView.findViewById(R.id.rightColumnText);
+            TextView nameColumn = convertView.findViewById(R.id.rightColumnText);
 
             if (lifespanColumn != null)
             {

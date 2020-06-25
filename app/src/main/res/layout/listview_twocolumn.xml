@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight">
 
     <TextView
         android:id="@+id/leftColumnText"
-        android:layout_width = "0dp"
-        android:layout_height = "40sp"
-        android:layout_weight = "1"
-        android:gravity = "center"
-        android:text = "Left"
+        android:layout_width="0dp"
+        android:layout_height="70sp"
+        android:layout_marginRight="20sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Left"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextPrimary"
         android:textSize="15sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorTextPrimary"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/rightColumnText"
-        android:layout_width = "0dp"
-        android:layout_height = "40sp"
-        android:layout_weight = "2"
-        android:gravity = "center"
-        android:text = "Right"
+        android:layout_width="0dp"
+        android:layout_height="70sp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Right"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextPrimary"
         android:textSize="15sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorTextPrimary"/>
+        android:textStyle="normal" />
 </LinearLayout>

@@ -18,12 +18,12 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@color/colorPrimaryLight"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/main_nav_header"
-        app:menu="@menu/activity_main_drawer"
 
-        android:background="@color/colorPrimaryLight"
         app:itemIconTint="@color/colorTextPrimary"
-        app:itemTextColor="@color/colorTextPrimary"/>
+        app:itemTextColor="@color/colorTextPrimary"
+        app:menu="@menu/activity_main_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

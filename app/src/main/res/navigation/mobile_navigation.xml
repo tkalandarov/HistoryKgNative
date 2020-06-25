@@ -3,41 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_dates">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.jelly.historykgnative.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_dates"
+        android:name="com.jelly.historykgnative.ui.dates.DatesFragment"
+        android:label="@string/menu_dates"
+        tools:layout="@layout/fragment_dates" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_people"
         android:name="com.jelly.historykgnative.ui.people.PeopleFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_people"
         tools:layout="@layout/fragment_people" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.jelly.historykgnative.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_test"
+        android:name="com.jelly.historykgnative.ui.test.TestFragment"
+        android:label="@string/menu_test"
+        tools:layout="@layout/fragment_test" />
 
-    <fragment
-        android:id="@+id/nav_tools"
+    <!--<fragment
+        android:id="@+id/nav_bookmarks"
         android:name="com.jelly.historykgnative.ui.tools.ToolsFragment"
         android:label="@string/menu_bookmarks"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/fragment_tools" />-->
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.jelly.historykgnative.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_about"
+        android:name="com.jelly.historykgnative.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
 
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.jelly.historykgnative.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
 </navigation>

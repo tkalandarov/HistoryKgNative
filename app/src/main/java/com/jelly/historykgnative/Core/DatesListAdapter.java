@@ -25,7 +25,7 @@ public class DatesListAdapter extends ArrayAdapter<DateModel> implements Filtera
     private LayoutInflater mInflater;
     ArrayList<DateModel> originalData;
     ArrayList<DateModel> filteredData;
-    private DatesFilter mFilter = new DatesFilter();
+    private DatesListAdapter.DatesFilter mFilter = new DatesListAdapter.DatesFilter();
 
     public DatesListAdapter(@NonNull Context context, int resource, @NonNull ArrayList<DateModel> objects)
     {
@@ -71,8 +71,8 @@ public class DatesListAdapter extends ArrayAdapter<DateModel> implements Filtera
 
         if (date != null)
         {
-            TextView dateColumn = (TextView) convertView.findViewById(R.id.leftColumnText);
-            TextView eventColumn = (TextView) convertView.findViewById(R.id.rightColumnText);
+            TextView dateColumn = convertView.findViewById(R.id.leftColumnText);
+            TextView eventColumn = convertView.findViewById(R.id.rightColumnText);
 
             if (dateColumn != null)
             {
@@ -93,7 +93,6 @@ public class DatesListAdapter extends ArrayAdapter<DateModel> implements Filtera
         @Override
         protected FilterResults performFiltering(CharSequence constraint)
         {
-
             String filterString = constraint.toString().toLowerCase();
             FilterResults results = new FilterResults();
 

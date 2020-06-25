@@ -1,11 +1,12 @@
 package com.jelly.historykgnative.Models;
 
-import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity(tableName = "Questions")
-public class QuestionModel
+public class QuestionModel implements Serializable
 {
     @PrimaryKey(autoGenerate = true) // Enable autoincrement
     public int Id;
